@@ -4,3 +4,9 @@
     line-height: $height;
     color: $color;
 }
+
+@mixin mobile-only {
+    @media screen and (max-width: 536px){
+        @content;
+    }
+}
